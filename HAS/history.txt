@@ -1,0 +1,12 @@
+********** HISTORY **********
+
+Choice: Dryer
+ Programs: Auto dry:High
+ Date & Time: 2023-04-08T03:14:38.845061100-04:00[America/Toronto]
+-------------------------------------------------
+Choice: Dishwasher
+ Programs: Overnight
+ Vario Speed Plus: Yes
+ Extra Dry: Yes
+ Date & Time: 2023-04-08T04:07:46.655953900-04:00[America/Toronto]
+-------------------------------------------------

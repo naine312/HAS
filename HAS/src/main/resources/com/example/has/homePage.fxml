@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="326.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.has.HomePageController">
+   <children>
+      <Pane prefHeight="157.0" prefWidth="326.0" style="-fx-background-color: #DFD3BB;">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="150.0" layoutX="102.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="145.0" layoutY="65.0" text="HAS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="131.0" text="The Home In Your Pocket">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+            <MenuButton layoutX="284.0" layoutY="2.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="27.0" prefWidth="40.0" style="-fx-background-color: black;" text="..." textFill="WHITE">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#history" text="History" />
+                <MenuItem mnemonicParsing="false" text="About Us" />
+                  <MenuItem mnemonicParsing="false" onAction="#alarmClock" text="Set An Alarm" />
+              </items>
+            </MenuButton>
+         </children>
+      </Pane>
+      <Separator layoutX="64.0" layoutY="486.0" prefWidth="200.0" />
+      <ImageView fitHeight="83.0" fitWidth="127.0" layoutX="100.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 2;">
+         <image>
+            <Image url="@icon.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.28" contrast="1.0" hue="0.18" saturation="-0.09" />
+         </effect>
+      </ImageView>
+      <ImageView blendMode="MULTIPLY" fitHeight="88.0" fitWidth="221.0" layoutX="25.0" layoutY="172.0" onMouseClicked="#washingMachine" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../WashingMachine.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.53" contrast="0.17" saturation="-0.09" />
+         </effect>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="206.0" prefHeight="20.0" prefWidth="104.0" text="Wshing Machine" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="127.0" layoutX="173.0" layoutY="172.0" onMouseClicked="#dryer" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Dryer.jpeg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.67" contrast="0.91" saturation="-0.02" />
+         </effect>
+      </ImageView>
+      <Label layoutX="211.0" layoutY="206.0" prefHeight="20.0" prefWidth="51.0" text="  Dryer" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="123.0" layoutX="25.0" layoutY="279.0" onMouseClicked="#dishwasher" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Dishwasher.jpeg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.28" contrast="0.06" saturation="0.02" />
+         </effect>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="313.0" prefHeight="20.0" prefWidth="76.0" text="Dishwasher" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="127.0" layoutX="175.0" layoutY="279.0" onMouseClicked="#microwave" pickOnBounds="true">
+         <image>
+            <Image url="@../../../microwave.jpeg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.51" contrast="0.36" />
+         </effect>
+      </ImageView>
+      <Label layoutX="203.0" layoutY="313.0" text="Microwave" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="125.0" layoutX="25.0" layoutY="384.0" onMouseClicked="#light" pickOnBounds="true">
+         <image>
+            <Image url="@../../../light.jpeg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.39" contrast="-0.12" />
+         </effect>
+      </ImageView>
+      <Label layoutX="57.0" layoutY="418.0" text="Light/Fan" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="127.0" layoutX="175.0" layoutY="384.0" onMouseClicked="#door" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Doors.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.47" contrast="-0.08" hue="0.02" />
+         </effect>
+      </ImageView>
+      <Label layoutX="220.0" layoutY="418.0" prefHeight="20.0" prefWidth="37.0" text="Doors" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
